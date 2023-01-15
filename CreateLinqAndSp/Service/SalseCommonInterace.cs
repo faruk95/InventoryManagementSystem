@@ -84,8 +84,6 @@ namespace CreateLinqAndSp.Service
                 throw;
             }
             return "success";
-
-
         }
 
         public async Task<MessageHelper> createListItem(List<CrateItemList> itemList)
@@ -170,7 +168,6 @@ namespace CreateLinqAndSp.Service
                         statuscode = 200,
 
                     };
-
                 }
                 else
                 {
@@ -182,14 +179,11 @@ namespace CreateLinqAndSp.Service
                         duplicate = duplicateList
                     };
                 }
-
-
             }
             catch (Exception e)
             {
                 throw new Exception("" + e.Message);
             }
-
         }
 
         public async Task<MessageHelper> EditItem(List<EditItemsViewModel> edit)
