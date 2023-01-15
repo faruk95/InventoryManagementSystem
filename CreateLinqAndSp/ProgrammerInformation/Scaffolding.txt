@@ -1,0 +1,17 @@
+﻿***************************** Scaffolding *********************************
+scaffold-DbContext "Server=DESKTOP-N8EN9JO\SQLEXPRESS;Database=TaskFromMahmudvai;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -Context "AppDbContext" -DataAnnotations -t tblItem ,tblPartnerType ,tblPartner,tblSales ,tblSalesDetails ,tblPurchase ,tblPurchaseDetails -f
+
+***************************** App setting ConnectionString *********************************
+
+"Server=DESKTOP-N8EN9JO\\SQLEXPRESS;Database=TaskFromMahmudvai;Trusted_Connection=True;MultipleActiveResultSets=true" 
+
+***************************** Need For Scoffolding (Packages)*********************************
+1.Microsoft.EntityFrameworkCore.Tools
+2.Microsoft.EntityFrameworkCore.SqlServer
+3.Microsoft.EntityFrameworkCore
+
+***************************** Programm.cs Add *********************************
+ 
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddTransient<ISalseCommonInterace,SalseCommonInterace>();
+            
