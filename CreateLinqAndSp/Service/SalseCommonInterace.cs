@@ -82,13 +82,13 @@ namespace CreateLinqAndSp.Service
                 await _appDbContext.AddAsync(tp);
                 await _appDbContext.SaveChangesAsync();
                 { // testing new dev_faruk
-                   }
+                }
 
 
             }
-            
-            
-            
+
+
+
 
             catch (Exception)
             {
@@ -947,7 +947,7 @@ namespace CreateLinqAndSp.Service
         #endregion
 
         #region ===================  CREATR UPDATE DELETE =================
-
+        //{}
         public async Task<MessageHelper> CreateECommerceOnlineDeleveryHeader(ECommerceOnlineDTO ECOnlineDTO)
         {
             // var OnlineDeliveryHeader= await _appDbContext.TblEcommerceOnlineDeliveryHeaders.Where<>
