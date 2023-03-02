@@ -101,5 +101,10 @@ namespace CreateLinqAndSp.Controllers
         public async Task<List<ReportWithGivenColumnDTO>> FromDailyPurchaseAndSalesReportsingleTo10() { return await _salseCommonInterace.FromDailyPurchaseAndSalesReportsingleTo10(); }
 
         //DailySalseReport(int dateTime)
+        [HttpPost()]
+        public async Task<MessageHelper> CreatePhysialTestHeaderwithRow(PhysicalTestDTO createCmnDTO)
+        {
+            return await _salseCommonInterace.CreatePhysialTestHeaderwithRow(createCmnDTO);
+        }
     }
 }

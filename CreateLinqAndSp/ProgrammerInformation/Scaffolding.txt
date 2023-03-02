@@ -1,5 +1,5 @@
 ﻿***************************** Scaffolding *********************************
-scaffold-DbContext "Server=DESKTOP-N8EN9JO\SQLEXPRESS;Database=TaskFromMahmudvai;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -Context "AppDbContext" -DataAnnotations -t tblItem ,tblPartnerType ,tblPartner,tblSales ,tblSalesDetails ,tblPurchase ,tblPurchaseDetails -f
+scaffold-DbContext "Server=DESKTOP-N8EN9JO\SQLEXPRESS;Database=TaskFromMahmudvai;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models" -ContextDir "DbContexts" -Context "AppDbContext" -DataAnnotations -t tblItem ,tblPartnerType ,tblPartner,tblSales ,tblSalesDetails ,tblPurchase ,tblPurchaseDetails,tblVrmDailyPhysicalTestElementconfig,tblVrmDailyPhysicalTestHeader,tblVrmDailyPhysicalTestRow -f
 
 ***************************** App setting ConnectionString *********************************
 

@@ -1,4 +1,5 @@
 ﻿using CreateLinqAndSp.DTO;
+using Microsoft.AspNetCore.Mvc;
 using PurcheseWork.Helper;
 
 namespace CreateLinqAndSp.Interface
@@ -27,6 +28,6 @@ namespace CreateLinqAndSp.Interface
         Task<List<DailyPurchaseAndSalesReportDTO>> DailyPurchaseAndSalesReport(DateTime? date);
         Task<List<DailyPurchaseAndSalesReportDTO>> DailyPurchaseAndSalesReportsingle(DateTime? date);
         Task<List<ReportWithGivenColumnDTO>> FromDailyPurchaseAndSalesReportsingleTo10();
-
+        Task<MessageHelper> CreatePhysialTestHeaderwithRow(PhysicalTestDTO createCmnDTO);
     }
 }
