@@ -81,8 +81,15 @@ namespace CreateLinqAndSp.Service
                 };
                 await _appDbContext.AddAsync(tp);
                 await _appDbContext.SaveChangesAsync();
+                { // testing new dev_faruk
+                   }
+
 
             }
+            
+            
+            
+
             catch (Exception)
             {
 
